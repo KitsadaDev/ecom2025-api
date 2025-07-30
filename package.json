@@ -23,8 +23,10 @@
     "stripe": "^18.0.0"
   },
   "scripts": {
+    "build": "prisma generate",
     "start": "nodemon server.js",
     "dev": "nodemon server.js",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "vercel-build": "prisma generate && prisma db push"
   }
 }
