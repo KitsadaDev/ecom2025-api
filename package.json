@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "module": "server.js",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prisma": "^6.11.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.11.1",
+    "@stripe/react-stripe-js": "^3.8.0",
+    "@stripe/stripe-js": "^7.6.1",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10",
+    "stripe": "^18.0.0"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js",
+    "postinstall": "prisma generate"
+  }
+}
