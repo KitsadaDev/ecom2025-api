@@ -26,7 +26,6 @@
     "build": "prisma generate",
     "start": "nodemon server.js",
     "dev": "nodemon server.js",
-    "postinstall": "prisma generate",
     "vercel-build": "prisma generate && prisma db push"
   }
 }
