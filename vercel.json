@@ -1,6 +1,15 @@
 {
   "version": 2,
   "name": "ecommerce-server",
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["prisma/**"]
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
